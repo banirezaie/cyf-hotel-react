@@ -1,3 +1,5 @@
+/** @format */
+
 .App-header {
   background-color: #222;
   height: 50px;
@@ -59,4 +61,23 @@ tr {
 .rowColour {
   cursor: pointer;
   background: darkgrey;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222;
+  height: 60px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+.nav {
+  display: flex;
+}
+.margin {
+  margin: 0 3rem;
+}
+.padding {
+  padding: 0 1rem;
 }

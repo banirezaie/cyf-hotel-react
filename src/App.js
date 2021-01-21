@@ -1,20 +1,23 @@
+/** @format */
+
 import React from "react";
-import Heading from "./Heading";
-import Bookings from "./Bookings";
+import Heading from "./components/Heading";
+import Home from "./components/Home";
 import "./App.css";
-import TouristInfoCards from "./TouristInfoCards";
-import Footer from "./Footer";
-import Restaurant from "./Restaurant";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Training from "./comp/Training";
 
 const App = () => {
   return (
-    <div className="App">
+    <BrowserRouter>
       <Heading />
-      <TouristInfoCards />
-      <Bookings />
-      <Restaurant />
-      <Footer />
-    </div>
+      <div className="App">
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/training" component={Training} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 };
 
